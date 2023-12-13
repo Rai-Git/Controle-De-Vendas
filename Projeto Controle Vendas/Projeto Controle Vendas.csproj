@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="br.com.ControlSale.VIEWS\RegisterClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="br.com.ControlSale.VIEWS\RegisterClient.Designer.cs">
+      <DependentUpon>RegisterClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="br.com.ControlSale.VIEWS\RegisterClient.resx">
+      <DependentUpon>RegisterClient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -133,7 +142,6 @@
     <Folder Include="br.com.ControlSale.CONNECTION\" />
     <Folder Include="br.com.ControlSale.DAO\" />
     <Folder Include="br.com.ControlSale.MODELS\" />
-    <Folder Include="br.com.ControlSale.VIEWS\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
