@@ -98,6 +98,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="br.com.ControlSale.CONNECTION\ConnectioFactory.cs" />
+    <Compile Include="br.com.ControlSale.DAO\CustomerDAO.cs" />
+    <Compile Include="br.com.ControlSale.MODELS\Customer.cs" />
     <Compile Include="br.com.ControlSale.VIEWS\RegisterClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,10 +141,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="br.com.ControlSale.CONNECTION\" />
-    <Folder Include="br.com.ControlSale.DAO\" />
-    <Folder Include="br.com.ControlSale.MODELS\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
