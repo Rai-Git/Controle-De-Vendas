@@ -32,13 +32,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabCustomer = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.comboTxtState = new System.Windows.Forms.ComboBox();
-            this.maskedTextZipCode = new System.Windows.Forms.MaskedTextBox();
+            this.textState = new System.Windows.Forms.ComboBox();
+            this.textZipCode = new System.Windows.Forms.MaskedTextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.maskedTextCell = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextPhone = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextCPF = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextRG = new System.Windows.Forms.MaskedTextBox();
+            this.textCell = new System.Windows.Forms.MaskedTextBox();
+            this.textPhone = new System.Windows.Forms.MaskedTextBox();
+            this.textCPF = new System.Windows.Forms.MaskedTextBox();
+            this.textRG = new System.Windows.Forms.MaskedTextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.textCity = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -63,19 +63,19 @@
             this.textCode = new System.Windows.Forms.TextBox();
             this.txtCode = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.datacustomer = new System.Windows.Forms.DataGridView();
+            this.buttonResearch = new System.Windows.Forms.Button();
+            this.textConsult = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.buttonNew = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
-            this.textConsult = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.buttonResearch = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.tabCustomer.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datacustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -117,13 +117,13 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.comboTxtState);
-            this.tabPage1.Controls.Add(this.maskedTextZipCode);
+            this.tabPage1.Controls.Add(this.textState);
+            this.tabPage1.Controls.Add(this.textZipCode);
             this.tabPage1.Controls.Add(this.label17);
-            this.tabPage1.Controls.Add(this.maskedTextCell);
-            this.tabPage1.Controls.Add(this.maskedTextPhone);
-            this.tabPage1.Controls.Add(this.maskedTextCPF);
-            this.tabPage1.Controls.Add(this.maskedTextRG);
+            this.tabPage1.Controls.Add(this.textCell);
+            this.tabPage1.Controls.Add(this.textPhone);
+            this.tabPage1.Controls.Add(this.textCPF);
+            this.tabPage1.Controls.Add(this.textRG);
             this.tabPage1.Controls.Add(this.label16);
             this.tabPage1.Controls.Add(this.textCity);
             this.tabPage1.Controls.Add(this.label14);
@@ -157,10 +157,10 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // comboTxtState
+            // textState
             // 
-            this.comboTxtState.FormattingEnabled = true;
-            this.comboTxtState.Items.AddRange(new object[] {
+            this.textState.FormattingEnabled = true;
+            this.textState.Items.AddRange(new object[] {
             "AC",
             "AL",
             "AP",
@@ -189,18 +189,18 @@
             "SE",
             "TO",
             ""});
-            this.comboTxtState.Location = new System.Drawing.Point(651, 350);
-            this.comboTxtState.Name = "comboTxtState";
-            this.comboTxtState.Size = new System.Drawing.Size(46, 27);
-            this.comboTxtState.TabIndex = 58;
+            this.textState.Location = new System.Drawing.Point(651, 350);
+            this.textState.Name = "textState";
+            this.textState.Size = new System.Drawing.Size(46, 27);
+            this.textState.TabIndex = 58;
             // 
-            // maskedTextZipCode
+            // textZipCode
             // 
-            this.maskedTextZipCode.Location = new System.Drawing.Point(102, 283);
-            this.maskedTextZipCode.Mask = "0000-9999";
-            this.maskedTextZipCode.Name = "maskedTextZipCode";
-            this.maskedTextZipCode.Size = new System.Drawing.Size(107, 26);
-            this.maskedTextZipCode.TabIndex = 56;
+            this.textZipCode.Location = new System.Drawing.Point(102, 283);
+            this.textZipCode.Mask = "0000-9999";
+            this.textZipCode.Name = "textZipCode";
+            this.textZipCode.Size = new System.Drawing.Size(107, 26);
+            this.textZipCode.TabIndex = 56;
             // 
             // label17
             // 
@@ -214,38 +214,38 @@
             this.label17.TabIndex = 55;
             this.label17.Text = "Adress";
             // 
-            // maskedTextCell
+            // textCell
             // 
-            this.maskedTextCell.Location = new System.Drawing.Point(357, 189);
-            this.maskedTextCell.Mask = "(99) 0 0000-0000";
-            this.maskedTextCell.Name = "maskedTextCell";
-            this.maskedTextCell.Size = new System.Drawing.Size(134, 26);
-            this.maskedTextCell.TabIndex = 54;
+            this.textCell.Location = new System.Drawing.Point(357, 189);
+            this.textCell.Mask = "(99) 0 0000-0000";
+            this.textCell.Name = "textCell";
+            this.textCell.Size = new System.Drawing.Size(134, 26);
+            this.textCell.TabIndex = 54;
             // 
-            // maskedTextPhone
+            // textPhone
             // 
-            this.maskedTextPhone.Location = new System.Drawing.Point(109, 189);
-            this.maskedTextPhone.Mask = "(99) 0000-0000";
-            this.maskedTextPhone.Name = "maskedTextPhone";
-            this.maskedTextPhone.Size = new System.Drawing.Size(134, 26);
-            this.maskedTextPhone.TabIndex = 53;
+            this.textPhone.Location = new System.Drawing.Point(109, 189);
+            this.textPhone.Mask = "(99) 0000-0000";
+            this.textPhone.Name = "textPhone";
+            this.textPhone.Size = new System.Drawing.Size(134, 26);
+            this.textPhone.TabIndex = 53;
             // 
-            // maskedTextCPF
+            // textCPF
             // 
-            this.maskedTextCPF.Location = new System.Drawing.Point(102, 88);
-            this.maskedTextCPF.Mask = "###,###,###-##";
-            this.maskedTextCPF.Name = "maskedTextCPF";
-            this.maskedTextCPF.Size = new System.Drawing.Size(134, 26);
-            this.maskedTextCPF.TabIndex = 52;
-            this.maskedTextCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePrompt;
+            this.textCPF.Location = new System.Drawing.Point(102, 88);
+            this.textCPF.Mask = "###,###,###-##";
+            this.textCPF.Name = "textCPF";
+            this.textCPF.Size = new System.Drawing.Size(134, 26);
+            this.textCPF.TabIndex = 52;
+            this.textCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePrompt;
             // 
-            // maskedTextRG
+            // textRG
             // 
-            this.maskedTextRG.Location = new System.Drawing.Point(467, 56);
-            this.maskedTextRG.Mask = "##,###,###";
-            this.maskedTextRG.Name = "maskedTextRG";
-            this.maskedTextRG.Size = new System.Drawing.Size(115, 26);
-            this.maskedTextRG.TabIndex = 51;
+            this.textRG.Location = new System.Drawing.Point(467, 56);
+            this.textRG.Mask = "##,###,###";
+            this.textRG.Name = "textRG";
+            this.textRG.Size = new System.Drawing.Size(115, 26);
+            this.textRG.TabIndex = 51;
             // 
             // label16
             // 
@@ -261,7 +261,7 @@
             // 
             // textCity
             // 
-            this.textCity.Location = new System.Drawing.Point(347, 353);
+            this.textCity.Location = new System.Drawing.Point(357, 355);
             this.textCity.Name = "textCity";
             this.textCity.Size = new System.Drawing.Size(160, 26);
             this.textCity.TabIndex = 49;
@@ -280,7 +280,7 @@
             // 
             // textDistrict
             // 
-            this.textDistrict.Location = new System.Drawing.Point(553, 307);
+            this.textDistrict.Location = new System.Drawing.Point(553, 315);
             this.textDistrict.Name = "textDistrict";
             this.textDistrict.Size = new System.Drawing.Size(248, 26);
             this.textDistrict.TabIndex = 47;
@@ -291,7 +291,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label13.Location = new System.Drawing.Point(478, 314);
+            this.label13.Location = new System.Drawing.Point(478, 318);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(69, 19);
             this.label13.TabIndex = 46;
@@ -472,6 +472,7 @@
             this.textCode.Name = "textCode";
             this.textCode.Size = new System.Drawing.Size(134, 26);
             this.textCode.TabIndex = 1;
+            this.textCode.TextChanged += new System.EventHandler(this.textCode_TextChanged);
             // 
             // txtCode
             // 
@@ -488,7 +489,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Controls.Add(this.datacustomer);
             this.tabPage2.Controls.Add(this.buttonResearch);
             this.tabPage2.Controls.Add(this.textConsult);
             this.tabPage2.Controls.Add(this.label18);
@@ -500,6 +501,47 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Consult";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // datacustomer
+            // 
+            this.datacustomer.AllowUserToAddRows = false;
+            this.datacustomer.AllowUserToDeleteRows = false;
+            this.datacustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datacustomer.Location = new System.Drawing.Point(12, 84);
+            this.datacustomer.Name = "datacustomer";
+            this.datacustomer.ReadOnly = true;
+            this.datacustomer.Size = new System.Drawing.Size(774, 306);
+            this.datacustomer.TabIndex = 7;
+            // 
+            // buttonResearch
+            // 
+            this.buttonResearch.BackColor = System.Drawing.SystemColors.Desktop;
+            this.buttonResearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonResearch.Location = new System.Drawing.Point(410, 27);
+            this.buttonResearch.Name = "buttonResearch";
+            this.buttonResearch.Size = new System.Drawing.Size(92, 34);
+            this.buttonResearch.TabIndex = 6;
+            this.buttonResearch.Text = "Research";
+            this.buttonResearch.UseVisualStyleBackColor = false;
+            // 
+            // textConsult
+            // 
+            this.textConsult.Location = new System.Drawing.Point(70, 31);
+            this.textConsult.Name = "textConsult";
+            this.textConsult.Size = new System.Drawing.Size(314, 26);
+            this.textConsult.TabIndex = 5;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label18.Location = new System.Drawing.Point(8, 34);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(59, 19);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "Name:";
             // 
             // buttonNew
             // 
@@ -546,47 +588,6 @@
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = false;
             // 
-            // textConsult
-            // 
-            this.textConsult.Location = new System.Drawing.Point(70, 31);
-            this.textConsult.Name = "textConsult";
-            this.textConsult.Size = new System.Drawing.Size(314, 26);
-            this.textConsult.TabIndex = 5;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label18.Location = new System.Drawing.Point(8, 34);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(59, 19);
-            this.label18.TabIndex = 4;
-            this.label18.Text = "Name:";
-            // 
-            // buttonResearch
-            // 
-            this.buttonResearch.BackColor = System.Drawing.SystemColors.Desktop;
-            this.buttonResearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonResearch.Location = new System.Drawing.Point(410, 27);
-            this.buttonResearch.Name = "buttonResearch";
-            this.buttonResearch.Size = new System.Drawing.Size(92, 34);
-            this.buttonResearch.TabIndex = 6;
-            this.buttonResearch.Text = "Research";
-            this.buttonResearch.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 84);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(774, 306);
-            this.dataGridView1.TabIndex = 7;
-            // 
             // RegisterClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -607,7 +608,7 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datacustomer)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -642,18 +643,18 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label txtCpf;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.MaskedTextBox maskedTextRG;
-        private System.Windows.Forms.MaskedTextBox maskedTextCPF;
-        private System.Windows.Forms.MaskedTextBox maskedTextCell;
-        private System.Windows.Forms.MaskedTextBox maskedTextPhone;
+        private System.Windows.Forms.MaskedTextBox textRG;
+        private System.Windows.Forms.MaskedTextBox textCPF;
+        private System.Windows.Forms.MaskedTextBox textCell;
+        private System.Windows.Forms.MaskedTextBox textPhone;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.MaskedTextBox maskedTextZipCode;
-        private System.Windows.Forms.ComboBox comboTxtState;
+        private System.Windows.Forms.MaskedTextBox textZipCode;
+        private System.Windows.Forms.ComboBox textState;
         private System.Windows.Forms.Button buttonNew;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonEdit;
         private System.Windows.Forms.Button buttonDelete;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView datacustomer;
         private System.Windows.Forms.Button buttonResearch;
         private System.Windows.Forms.TextBox textConsult;
         private System.Windows.Forms.Label label18;

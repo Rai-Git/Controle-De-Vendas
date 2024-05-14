@@ -50,5 +50,10 @@ namespace Projeto_Controle_Vendas.br.com.ControlSale.VIEWS
             Customer obj = new Customer();
             obj.setName(txtName.Text);
         }
+
+        private void textCode_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
